@@ -137,3 +137,15 @@ for (var i = 0; i < nbr.length; i++) {
 console.log(nbr);
 
 //Exercice 7
+
+/**
+ * Compute TVA
+ * @param {float} price
+ * @param {float} percent
+ * @return {float} totalPriceAndTva
+ */
+var computeTva = function computeTva (price, percent) {
+    const totalTva = (price * percent) / 100;
+    return price + totalTva;
+}
+console.log(computeTva(20.00, 20.00));
